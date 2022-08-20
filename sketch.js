@@ -11,7 +11,7 @@ function randomNum(min, max) {
 }
 
 function ai_next_move(p1) {
-    //if (p1 == "FORTNITE"){
+    if (p1 == "FORTNITE"){
       t = randomNum(1,4)
       if (t == 1){
         return "r"
@@ -22,16 +22,16 @@ function ai_next_move(p1) {
       if (t == 3){
         return "s"
       }
-    //}
-    //if (p1 == "r"){
-    //    return "p";
-    //}
-    //if (p1 == "p"){
-    //    return "s";
-    //}
-    //if (p1 == "s"){
-    //    return "r";
-    //}
+    }
+    if (p1 == "r"){
+        return "p";
+    }
+    if (p1 == "p"){
+        return "s";
+    }
+    if (p1 == "s"){
+        return "r";
+    }
 }
 
 function setup() {
